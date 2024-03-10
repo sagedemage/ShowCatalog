@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Home {% endblock %}
+
+{% block content %}
+<h1>Edit Show</h1>
+<p>Welcome to the home page!</p>
+<form id="update-show-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="fname" value="" autocomplete="off" required><br>
+    <label for="start-year">Start year:</label><br>
+    <input type="text" id="start-year" name="fname" value="" autocomplete="off" required><br>
+    <label for="end-year">End year:</label><br>
+    <input type="text" id="end-year" name="fname" value="" autocomplete="off" required><br>
+    <label for="rating">Rating:</label><br>
+    <input type="text" id="rating" name="fname" value="" autocomplete="off" required><br>
+    <label for="age-rating">Age Rating:</label><br>
+    <input type="text" id="age-rating" name="fname" value="" autocomplete="off" required><br>
+    <br>
+    <button>Submit</button>
+</form>
+
+<script src="static/update_show.js"></script>
+
+{% endblock %}
+
+
+
+

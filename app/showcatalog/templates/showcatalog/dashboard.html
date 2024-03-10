@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Home {% endblock %}
+
+{% block content %}
+<h1>Dashboard</h1>
+
+<button onclick="location.href = '/add-show'">Add</button>
+<br/>
+<br/>
+<div style="overflow-x: auto;">
+    <table>
+        <tr>
+            <th class="cell">Name</th>
+            <th class="cell">Start Year</th>
+            <th class="cell">End Year</th>
+            <th class="cell">Rating</th>
+            <th class="cell">Age Rating</th>
+            <th class="invisible-cell" style="background-color: transparent;"></th>
+        </tr>
+        {% for show in shows %}
+        <tr>
+            <td class="cell">{{show.name}}</td>
+            <td class="cell">{{show.start_year}}</td>
+            <td class="cell">{{show.end_year}}</td>
+            <td class="cell">{{show.rating}}</td>
+            <td class="cell">{{show.age_rating}}</td>
+            <td class="invisible-cell">
+                <button class="button" onclick="location.href = '/update-show?id={{show.id}}'">Update</button>
+                <button class="delete-button" onclick="deleteShow({{show.id}})" value="{{show.id}}">Delete</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+{% endblock %}

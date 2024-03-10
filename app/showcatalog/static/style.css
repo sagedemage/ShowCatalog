@@ -1,0 +1,84 @@
+#navbar {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#nav-links > a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+#navbar > ul {
+    list-style-type: none;
+}
+
+#navbar > ul > li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+#navbar > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    #hamburger-menu {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+    }
+}
+
+html, body {
+    margin: 0;
+}
+
+#content {
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#hamburger-menu {
+    width: 30px;
+    height: 30px;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+.cell {
+    border: 1px black solid;
+    padding-right: 0px;
+    width: 75px;
+}
+
+.invisible-cell {
+    padding-right: 0px;
+    width: 75px;
+}
+
+tr {
+    display: flex;
+}
+
+
+
+

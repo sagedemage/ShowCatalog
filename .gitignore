@@ -1,0 +1,19 @@
+## Python ##
+venv/
+__pycache__/
+
+# Env files
+.env
+
+## Node.js ##
+node_modules
+
+# Intellij
+.idea/
+
+# Media files
+*.kra
+
+# Cache files
+*.*~
+

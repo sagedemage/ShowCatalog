@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+</head>
+<body>
+    <div id="navbar">
+        <img id="hamburger-menu" onclick="toggleDropdown()" src="static/hamburger-icon.png" />
+        <span id="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/dashboard">Dashboard</a>
+        </span>
+
+        <ul id="dropdown" style="display: none;">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+<script src="static/main.js"></script>
+</html>
